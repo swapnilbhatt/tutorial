@@ -5,5 +5,5 @@
 for data in *.txt
 	do
 		echo
-		grep -v Species $data |cut -d , -f 2| sort|uniq -c
+		grep -v Species $data |cut -d , -f 2| sort|uniq -c|sort -n -r
 	done		
